@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TSRTC Bus Pass</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #e6e6e6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: #cfd6e6;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.header h1 {
+    color: blue;
+    margin: 5px;
+}
+
+.header h2 {
+    margin: 5px;
+}
+
+/* SECTION BOX */
+.box {
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.box-title {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background: #4a7ca5;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* LAYOUT */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 48%;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    margin-top: 8px;
+}
+
+input, select, textarea {
+    padding: 4px;
+    margin-top: 8px;
+}
+
+.small {
+    font-size: 12px;
+    color: red;
+}
+
+/* RED STAR */
+.star {
+    color: red;
+    font-weight: bold;
+}
+
+/* CAPTCHA */
+.captcha-box {
+    background: darkred;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 15px;
+    letter-spacing: 3px;
+}
+
+/* BUTTON */
+button {
+    background: #ff5c73;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    display: block;
+    margin: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+    <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+    <h2>GENERAL BUS PASS APPLICATION</h2>
+</div>
+
+<!-- Applicant -->
+<div class="box">
+<div class="box-title">Applicant Details</div>
+
+<div class="row">
+<div class="col">
+
+<label>Name <span class="star">*</span></label>
+<input type="text">
+<span class="small">(Maximum characters: 20)</span><br>
+
+<label>Date of birth <span class="star">*</span></label>
+<input type="date"><br>
+
+<label>Age As on :</label>
+<input type="text" style="width:50px;"> Year(s)
+<input type="text" style="width:50px;"> Month(s)
+<input type="text" style="width:50px;"> Day(s)<br>
+
+<label>WhatsApp No <span class="star">*</span></label>
+<input type="text"><br>
+
+<label>Photo <span class="star">*</span></label>
+<input type="file"><br>
+
+</div>
+
+<div class="col">
+
+<label>Father's / Guardian's Name <span class="star">*</span></label>
+<input type="text"><br>
+
+<label>Gender <span class="star">*</span></label>
+<input type="radio"> Female
+<input type="radio"> Male<br>
+
+<label>Aadhaar No</label>
+<input type="text"><br>
+
+<label>E-mail Id <span class="star">*</span></label>
+<input type="email"><br>
+
+</div>
+</div>
+</div>
+
+<!-- Address -->
+<div class="box">
+<div class="box-title">Residential Address Details</div>
+
+<div class="row">
+<div class="col">
+
+<label>Applicant's Address <span class="star">*</span></label><br>
+<textarea rows="3" cols="30"></textarea><br>
+<span class="small">(Maximum characters: 20)</span><br>
+
+<label>Mandal <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>HYDERABAD</option>
+</select><br>
+
+<label>Pincode <span class="star">*</span></label>
+<input type="text"><br>
+
+</div>
+
+<div class="col">
+
+<label>District <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>HYDERABAD</option>
+</select><br>
+
+<label>Village <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>HYDERABAD</option>
+</select>
+
+</div>
+</div>
+</div>
+
+<!-- Pass Type -->
+<div class="box">
+<div class="box-title">Pass Type Details</div>
+
+<label>City <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>Hyderabad</option>
+</select><br>
+
+<label>Pass Type <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>Student</option>
+<option>General</option>
+<option>Monthly</option>
+</select>
+
+</div>
+
+<!-- Payment -->
+<div class="box">
+<div class="box-title">Mode of Payment & Pass Collection</div>
+
+<label>Payment Mode <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>Online</option>
+<option>Cash</option>
+<option>UPI</option>
+</select><br>
+
+<label>Pass Delivery Mode <span class="star">*</span></label>
+<select>
+<option>--Select--</option>
+<option>At Counter</option>
+<option>Home Delivery</option>
+</select><br>
+
+<label>Center to Collect Pass <span class="star">*</span></label>
+<select>
+
+<option>--Select--</option>
+<option>RTC ABIDS - HYD [31/03/2026]</option>
+<option>RTC AFZALGUNJ - HYD [31/03/2026]</option>
+<option>RTC AIRPORT - HYD [30/03/2026]</option>
+<option>RTC DILSUKHNAGAR - HYD [31/03/2026]</option>
+<option>RTC KOTI - HYD [31/03/2026]</option>
+<option>RTC KPHB - HYD [31/03/2026]</option>
+<option>RTC LB NAGAR - HYD [31/03/2026]</option>
+<option>RTC MEHDIPATNAM - HYD [31/03/2026]</option>
+<option>RTC SR NAGAR - HYD [31/03/2026]</option>
+<option>RTC TARNAKA - HYD [31/03/2026]</option>
+
+</select>
+
+</div>
+
+<!-- CAPTCHA -->
+<div style="text-align:center; margin:20px;">
+    <div class="captcha-box">t0YmY8</div><br><br>
+    <input type="text" placeholder="Enter Captcha">
+</div>
+
+<button>Submit</button>
+
+</div>
+
+</body>
+</html>
